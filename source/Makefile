@@ -49,12 +49,13 @@ install:	all
 	ln -s $(DESTDIR)$(BINDIR)/zita-rev1 $(DESTDIR)$(BINDIR)/zita-rev1-amb
 	rm -rf $(DESTDIR)$(SHARED)/*
 	install -m 644 ../share/* $(DESTDIR)$(SHARED)
-
+	install -Dm644 -t $(PREFIX)/share/applications/ ../zita-rev1.desktop
 
 uninstall:
 	rm -f  $(DESTDIR)$(BINDIR)/zita-rev1
 	rm -f  $(DESTDIR)$(BINDIR)/zita-rev1-amb
 	rm -rf $(DESTDIR)$(SHARED)
+	rm -f $(PREFIX)/share/applications/zita-rev1.desktop
 
 
 clean:
