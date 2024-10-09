@@ -30,6 +30,8 @@ XImage    *eq2sect_img;
 XImage    *mixsect_img;
 XImage    *ambsect_img;
 XImage    *redzita_img;
+XImage    *sm_img;
+
 
 RotaryGeom  r_delay;
 RotaryGeom  r_xover;
