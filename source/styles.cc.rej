@@ -1,0 +1,9 @@
+diff a/source/styles.cc b/source/styles.cc	(rejected hunks)
+@@ -31,6 +31,7 @@ XImage    *eq2sect_img;
+ XImage    *mixsect_img;
+ XImage    *ambsect_img;
+ XImage    *redzita_img;
++XImage    *sm_img;
+ 
+ RotaryImg  r_delay_img;
+ RotaryImg  r_xover_img;
