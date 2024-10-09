@@ -54,7 +54,7 @@ Mainwin::Mainwin (X_rootwin *parent, X_resman *xres, int xp, int yp, Jclient *jc
     H.rclas (xres->rclas ());
     x_apply (&H); 
 
-    _ambis = xres->getb (".ambisonic", false);
+    _ambis = xres->getb (".ambisonic", force_ambis);
     RotaryCtl::init (disp ());
     x = 0;
     _rotary [R_DELAY] = new Rlinctl (this, this, R_DELAY, &r_delay, x, 0, 160, 5,  0.02,  0.100,  0.04);
