@@ -19,7 +19,7 @@
 
 
 #ifndef __MAINWIN_H
-#define	__MAINWIN_H
+#define        __MAINWIN_H
 
 
 #include <clxclient.h>
