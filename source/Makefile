@@ -31,9 +31,10 @@ CXXFLAGS += -march=native
 all:	zita-rev1
 
 
-ZITA-REV1_O = zita-rev1.o styles.o jclient.o mainwin.o png2img.o guiclass.o rotary.o reverb.o pareq.o
+ZITA-REV1_O = zita-rev1.o styles.o jclient.o mainwin.o png2img.o guiclass.o rotary.o reverb.o pareq.o nsm.o nsmclient.o
 zita-rev1:	CPPFLAGS += $(shell pkgconf --cflags freetype2)
-zita-rev1:	LDLIBS += -lclxclient -lclthreads -lpng -lcairo -ljack -lpthread -lXft -lX11 -lrt
+zita-rev1:	LDLIBS += -lclxclient -lclthreads -lpng -lcairo -ljack -lpthread -lXft -lX11 -lrt -llo -lpthread
+
 zita-rev1:	$(ZITA-REV1_O) 
 	$(CXX) $(LDFLAGS) -o $@ $(ZITA-REV1_O) $(LDLIBS)
 $(ZITA-REV1_O):
