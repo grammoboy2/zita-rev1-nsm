@@ -22,7 +22,7 @@
 #include "png2img.h"
 
 
-XftColor      *XftColors [NXFTCOLORS];
+XftColor  *XftColors [NXFTCOLORS];
 
 XImage    *revsect_img;
 XImage    *eq1sect_img;
@@ -57,11 +57,11 @@ void styles_init (X_display *disp, X_resman *xrm)
     redzita_img = png2img (SHARED"/redzita.png", disp, XftColors [C_MAIN_BG]);
     sm_img      = png2img (SHARED"/sm.png",      disp, XftColors [C_MAIN_BG]);
 
-    if    (!revsect_img || !mixsect_img || !ambsect_img
+    if (!revsect_img || !mixsect_img || !ambsect_img
         || !eq1sect_img || !eq2sect_img || !redzita_img || !sm_img)
     {
-	fprintf (stderr, "Can't load images from '%s'.\n", SHARED);
-	exit (1);
+        fprintf (stderr, "Can't load images from '%s'.\n", SHARED);
+        exit (1);
     }
 
     r_delay._backg = XftColors [C_MAIN_BG];
