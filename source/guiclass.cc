@@ -24,15 +24,15 @@
 
 Rlinctl::Rlinctl (X_window   *parent,
                   X_callback *cbobj,
-		  int         cbind,
+		              int         cbind,
                   RotaryGeom *geom,
                   int         xp,
                   int         yp,
-		  int         cm,
-		  int         dd,
+		              int         cm,
+		              int         dd,
                   double      vmin,
-	          double      vmax,
-	          double      vini) :
+	                double      vmax,
+	                double      vini) :
 RotaryCtl (parent, cbobj, cbind, geom, xp, yp),
 _cm (cm),
 _dd (dd),
@@ -90,15 +90,15 @@ int Rlinctl::set_count (int u)
 
 Rlogctl::Rlogctl (X_window   *parent,
                   X_callback *cbobj,
-		  int         cbind,
+		              int         cbind,
                   RotaryGeom *geom,
                   int         xp,
                   int         yp,
-		  int         cm,
-		  int         dd,
+		              int         cm,
+		              int         dd,
                   double      vmin,
-	          double      vmax,
-	          double      vini) :
+	                double      vmax,
+	                double      vini) :
 RotaryCtl (parent, cbobj, cbind, geom, xp, yp),
 _cm (cm),
 _dd (dd),
